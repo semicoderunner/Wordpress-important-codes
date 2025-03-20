@@ -2,9 +2,43 @@ html {
     scroll-behavior: smooth;
 }
 /*Above code for enabling scroll to a place in website*/
+/*below code is if color coms over the logo*/
 html, body {
 max-width: 100% !important;
 overflow-x: hidden !important;
 }
 /*above code for 100 percent view in mobile right white space eleminator*/
+/* Force logo visibility */
+.site-logo img, 
+.custom-logo {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    filter: none !important;
+}
+
+/* Ensure the logo has a defined width and height */
+.site-logo img, 
+.custom-logo {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* If the logo color is affected by CSS */
+.site-logo img, 
+.custom-logo {
+    mix-blend-mode: normal !important;
+}
+
+/* If the logo is inside a flexbox or grid with hidden overflow */
+.site-logo {
+    overflow: visible !important;
+}
+
+/* If there's unwanted transparency */
+.site-logo img, 
+.custom-logo {
+    background: transparent !important;
+}
+/*color over logo end*/
 
